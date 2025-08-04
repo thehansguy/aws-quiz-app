@@ -116,9 +116,13 @@ const startSession = () => {
     if (!question || userAnswer === undefined) return false
 
     if (question.type === "single") {
-      return userAnswer === question.correctAnswer
+      // Convert 1-indexed correctAnswer to 0-indexed for comparison
+      return userAnswer === (question.correctAnswer as number) - 1
     } else {
-      const correctAnswers = Array.isArray(question.correctAnswer) ? question.correctAnswer : [question.correctAnswer]
+      // Convert 1-indexed correctAnswers to 0-indexed for comparison
+      const correctAnswers = Array.isArray(question.correctAnswer) 
+        ? question.correctAnswer.map(answer => answer - 1)
+        : [(question.correctAnswer as number) - 1]
       const userSelections = Array.isArray(userAnswer) ? userAnswer : [userAnswer]
 
       return (
@@ -132,9 +136,10 @@ const startSession = () => {
     const question = questions.find((q) => q.id === questionId)
     if (!question || !revealedAnswers.has(questionId)) return null
 
+    // Convert 1-indexed correctAnswer to 0-indexed for comparison
     const isCorrectOption = Array.isArray(question.correctAnswer)
-      ? question.correctAnswer.includes(optionIndex)
-      : question.correctAnswer === optionIndex
+      ? question.correctAnswer.map(answer => answer - 1).includes(optionIndex)
+      : (question.correctAnswer as number) - 1 === optionIndex
 
     const isUserSelected = isOptionSelected(questionId, optionIndex, question.type)
 
