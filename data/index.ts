@@ -19,7 +19,7 @@ const sampleQuestions: Question[] = [
       "AWS Trusted Advisor",
       "AWS Service Catalog"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Trusted Advisor
     type: "single"
   },
   {
@@ -32,7 +32,7 @@ const sampleQuestions: Question[] = [
       "Secure edge locations",
       "Patch Amazon RDS DB instances"
     ],
-    correctAnswer: [2, 3],
+    correctAnswer: [2, 3], // B, C
     type: "multiple",
     maxSelections: 2
   },
@@ -46,7 +46,7 @@ const sampleQuestions: Question[] = [
       "AWS does not charge for data sent from the AWS Cloud to the internet",
       "AWS eliminates many of the costs of building and maintaining on-premises data centers"
     ],
-    correctAnswer: [2, 5],
+    correctAnswer: [2, 5], // B, E
     type: "multiple",
     maxSelections: 2
   },
@@ -59,7 +59,7 @@ const sampleQuestions: Question[] = [
       "AWS License Manager",
       "AWS Managed Services"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - AWS Secrets Manager
     type: "single"
   },
   {
@@ -71,7 +71,7 @@ const sampleQuestions: Question[] = [
       "Patch the operating system of Amazon RDS instances",
       "Implement physical and environmental controls"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Configure firewalls and networks
     type: "single"
   },
   {
@@ -83,7 +83,7 @@ const sampleQuestions: Question[] = [
       "Amazon Simple Queue Service (Amazon SQS)",
       "Amazon Kinesis Data Streams"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - Amazon Simple Queue Service (Amazon SQS)
     explanation: ["Amazon Simple Queue Service (SQS): SQS is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. It allows one application to send messages to a queue, and another application to retrieve those messages from the queue. This can be helpful in scenarios where the sender and receiver are not required to interact with each other in real-time."],
     type: "single"
   },
@@ -96,7 +96,7 @@ const sampleQuestions: Question[] = [
       "AWS SDK",
       "AWS Cloud9"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - AWS Management Console
     type: "single"
   },
   {
@@ -108,7 +108,7 @@ const sampleQuestions: Question[] = [
       "A designated technical account manager (TAM) to assist in monitoring and optimization",
       "A consultative review and architecture guidance for the company's applications"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - A designated technical account manager (TAM)
     type: "single"
   },
   {
@@ -120,7 +120,7 @@ const sampleQuestions: Question[] = [
       "Spot Instances",
       "Convertible Reserved Instances"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - Spot Instances
     type: "single"
   },
   {
@@ -133,7 +133,7 @@ const sampleQuestions: Question[] = [
       "Infrastructure protection",
       "Availability and continuity"
     ],
-    correctAnswer: [3, 4],
+    correctAnswer: [3, 4], // C, D
     type: "multiple",
     maxSelections: 2
   },
@@ -146,7 +146,7 @@ const sampleQuestions: Question[] = [
       "EC2 Instance Savings Plans",
       "Amazon EC2 Auto Scaling instances"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - EC2 Instance Savings Plans
     type: "single"
   },
   {
@@ -158,7 +158,7 @@ const sampleQuestions: Question[] = [
       "Reliability",
       "Durability"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Elasticity
     type: "single"
   },
   {
@@ -171,7 +171,7 @@ const sampleQuestions: Question[] = [
       "AWS Trusted Advisor",
       "AWS Step Functions"
     ],
-    correctAnswer: [2, 5],
+    correctAnswer: [2, 5], // B, E
     explanation: ["B. Amazon Simple Queue Service (Amazon SQS): SQS is a fully managed message queuing service that enables decoupling of the components in a distributed system. It allows components to communicate asynchronously, promoting loose coupling.", "E. AWS Step Functions: Step Functions is a serverless function orchestrator that allows you to coordinate multiple AWS services into serverless workflows. It helps in creating loosely coupled, flexible systems by defining workflows that connect various services."],
     type: "multiple",
     maxSelections: 2
@@ -185,7 +185,7 @@ const sampleQuestions: Question[] = [
       "AWS Cost Allocation Tags",
       "AWS Organizations"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - AWS Budgets
     explanation: ["A. AWS Budgets is the AWS Cloud service that allows users to set custom spending thresholds and receive alerts when those thresholds are exceeded. It helps users to keep track of their AWS spending by providing notifications based on their budget limits."],
     type: "single"
   },
@@ -198,7 +198,7 @@ const sampleQuestions: Question[] = [
       "Application portfolio management",
       "Cloud financial management"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - Benefits management
     explanation: ["Benefits management – Ensure that the business benefits associated with your cloud investments are realized and sustained. The success of your transformation is determined by the resulting business benefits. Clear identification of the desired benefits upfront will allow you to prioritize your cloud investments and track transformation progress over time."],
     type: "single"
   },
@@ -211,7 +211,7 @@ const sampleQuestions: Question[] = [
       "S3 ACLs",
       "S3 Intelligent-Tiering"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - S3 Transfer Acceleration
     explanation: ["S3 Transfer Acceleration is a feature that utilizes Amazon CloudFront's globally distributed edge locations to accelerate the upload of objects to an S3 bucket. It optimizes data transfer by using Amazon's backbone network, reducing latency and improving speeds when transferring files over long distances."],
     type: "single"
   },
@@ -224,7 +224,7 @@ const sampleQuestions: Question[] = [
       "Spot Instances",
       "Dedicated Instances"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - On-Demand Instances
     type: "single"
   },
   {
@@ -236,7 +236,7 @@ const sampleQuestions: Question[] = [
       "Align",
       "Launch"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Envision
     type: "single"
   },
   {
@@ -248,7 +248,7 @@ const sampleQuestions: Question[] = [
       "Physical security of data centers",
       "Maintenance of VPC components"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Application data security
     type: "single"
   },
   {
@@ -260,7 +260,7 @@ const sampleQuestions: Question[] = [
       "Use EC2 instances in multiple edge locations",
       "Use EC2 instances in AWS Local Zones"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - Use EC2 instances in multiple AWS Regions
     type: "single"
   },
   {
@@ -272,7 +272,7 @@ const sampleQuestions: Question[] = [
       "Repurchase",
       "Refactor"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Refactor
     explanation: ["Lift and shift—moving applications to the cloud as-is. This is also sometimes referred to as rehosting. Refactor—modifying applications to better support the cloud environment. Replatform—moving applications to the cloud without major changes, but taking advantage of benefits of the cloud environment. Rebuild—rewrite the application from scratch. Replace—retire the application and replace it with a new cloud-native application."],
     type: "single"
   },
@@ -285,7 +285,7 @@ const sampleQuestions: Question[] = [
       "To access the AWS account through a CLI",
       "To access all of a company's AWS accounts"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - To access the AWS account through a CLI
     type: "single"
   },
   {
@@ -297,7 +297,7 @@ const sampleQuestions: Question[] = [
       "Amazon WorkLink",
       "AWS Elastic Beanstalk"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - Amazon AppStream 2.0
     type: "single"
   },
   {
@@ -309,7 +309,7 @@ const sampleQuestions: Question[] = [
       "Make large changes on fewer iterations to reduce chances of failure",
       "Avoid monolithic architecture by segmenting workloads"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Avoid monolithic architecture by segmenting workloads
     type: "single"
   },
   {
@@ -321,7 +321,7 @@ const sampleQuestions: Question[] = [
       "AWS Secrets Manager",
       "Server-side encryption"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Secrets Manager
     explanation: ["AWS Secrets Manager makes it easier to rotate, manage, and retrieve database credentials, API keys, and other secrets throughout their lifecycle."],
     type: "single"
   },
@@ -335,7 +335,7 @@ const sampleQuestions: Question[] = [
       "Create an IAM user with administrator privileges for daily administrative tasks, instead of using the root user",
       "Use programmatic access instead of the root user and password"
     ],
-    correctAnswer: [3, 4],
+    correctAnswer: [3, 4], // C, D
     type: "multiple",
     maxSelections: 2
   },
@@ -348,7 +348,7 @@ const sampleQuestions: Question[] = [
       "Take frequent snapshots of the DB instance. Store the snapshots in Amazon S3",
       "Modify the DB instance to be a Multi-AZ deployment"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Modify the DB instance to be a Multi-AZ deployment
     type: "single"
   },
   {
@@ -360,7 +360,7 @@ const sampleQuestions: Question[] = [
       "On-Demand Instances",
       "Dedicated Hosts"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - Reserved Instances
     type: "single"
   },
   {
@@ -372,7 +372,7 @@ const sampleQuestions: Question[] = [
       "Firewall vendor",
       "AWS Marketplace partner"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - The company
     type: "single"
   },
   {
@@ -384,7 +384,7 @@ const sampleQuestions: Question[] = [
       "Performance efficiency",
       "Cost optimization"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Reliability
     type: "single"
   },
   {
@@ -396,7 +396,7 @@ const sampleQuestions: Question[] = [
       "Amazon CloudWatch",
       "IAM Access Analyzer"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - IAM Access Analyzer
     type: "single"
   },
   {
@@ -408,7 +408,7 @@ const sampleQuestions: Question[] = [
       "Amazon QuickSight",
       "Amazon Redshift"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - Amazon QuickSight
     type: "single"
   },
   {
@@ -420,7 +420,7 @@ const sampleQuestions: Question[] = [
       "AWS IAM Identity Center (AWS Single Sign-On)",
       "AWS CLI"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Amazon Cognito
     explanation: ["B. AWS Cognito is correct answer. The user wants to login to THIRD PARTY APPLICATION Not to AWS SERVICES. Definition of Cognito - Amazon Cognito supports authentication with identity providers (IdPs) through Security Assertion Markup Language 2.0 (SAML 2.0). You can use an IdP that supports SAML with Amazon Cognito to provide a simple onboarding flow for your users."],
     type: "single"
   },
@@ -433,7 +433,7 @@ const sampleQuestions: Question[] = [
       "AWS Control Tower",
       "AWS Health Dashboard"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - AWS Health Dashboard
     type: "single"
   },
   {
@@ -445,7 +445,7 @@ const sampleQuestions: Question[] = [
       "Customer data",
       "Encryption keys"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - Customer data
     type: "single"
   },
   {
@@ -457,7 +457,7 @@ const sampleQuestions: Question[] = [
       "Amazon Inspector",
       "AWS Shield"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - Amazon Inspector
     type: "single"
   },
   {
@@ -469,7 +469,7 @@ const sampleQuestions: Question[] = [
       "AWS Application Discovery Service",
       "AWS Database Migration Service (AWS DMS)"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Application Discovery Service
     explanation: ["AWS Application Discovery Service collects both server and database configuration information. Server information includes hostnames, IP addresses, MAC addresses, as well as the resource allocation and utilization details of key resources such as CPU, network, memory, and disk."],
     type: "single"
   },
@@ -482,7 +482,7 @@ const sampleQuestions: Question[] = [
       "AWS Well-Architected Framework",
       "AWS Budgets"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Well-Architected Framework
     explanation: ["AWS Well-Architected Framework focuses on the architectural best practices than on organizational readiness for cloud adoption."],
     type: "single"
   },
@@ -496,7 +496,7 @@ const sampleQuestions: Question[] = [
       "VPC peering",
       "Amazon CloudFront"
     ],
-    correctAnswer: [1, 3],
+    correctAnswer: [1, 3], // A, C
     type: "multiple",
     maxSelections: 2
   },
@@ -509,7 +509,7 @@ const sampleQuestions: Question[] = [
       "Amazon Aurora",
       "Amazon Redshift"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Amazon DynamoDB
     type: "single"
   },
   {
@@ -522,7 +522,7 @@ const sampleQuestions: Question[] = [
       "Use Multi-AZ deployments for Amazon RDS",
       "Replace existing Amazon EC2 instances with AWS Elastic Beanstalk"
     ],
-    correctAnswer: [2, 3],
+    correctAnswer: [2, 3], // B, C
     type: "multiple",
     maxSelections: 2
   },
@@ -536,7 +536,7 @@ const sampleQuestions: Question[] = [
       "Deploy resources globally to improve response time",
       "Automatically recover from failure"
     ],
-    correctAnswer: [3, 5],
+    correctAnswer: [3, 5], // C, E
     type: "multiple",
     maxSelections: 2
   },
@@ -549,7 +549,7 @@ const sampleQuestions: Question[] = [
       "Data transfer between AWS Regions",
       "Data transfer between Availability Zones"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - Inbound data transfer from the internet
     explanation: ["There is no charge for inbound data transfer across all services in all Regions."],
     type: "single"
   },
@@ -562,7 +562,7 @@ const sampleQuestions: Question[] = [
       "Amazon EC2",
       "AWS OpsWorks"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - AWS Elastic Beanstalk
     type: "single"
   },
   {
@@ -574,7 +574,7 @@ const sampleQuestions: Question[] = [
       "Amazon Detective",
       "AWS WAF"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - AWS Firewall Manager
     type: "single"
   },
   {
@@ -586,7 +586,7 @@ const sampleQuestions: Question[] = [
       "Configure security groups for Amazon EC2 instances",
       "Maintain the physical hardware of the infrastructure"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Maintain the physical hardware of the infrastructure
     type: "single"
   },
   {
@@ -598,7 +598,7 @@ const sampleQuestions: Question[] = [
       "Amazon PrivateLink",
       "VPC peering"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - NAT gateway
     type: "single"
   },
   {
@@ -610,7 +610,7 @@ const sampleQuestions: Question[] = [
       "S3 One Zone-Infrequent Access (S3 One Zone-IA)",
       "S3 Standard-Infrequent Access (S3 Standard-IA)"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - S3 Glacier Flexible Retrieval
     explanation: ["Amazon S3 Glacier Flexible Retrieval (formerly Amazon S3 Glacier): Expedited (1 to 5 minutes), Standard (3 to 5 hours), Bulk (5 to 12 hours) – free"],
     type: "single"
   },
@@ -624,7 +624,7 @@ const sampleQuestions: Question[] = [
       "Patching the operating system on Amazon RDS instances",
       "Configuring security groups and network ACLs"
     ],
-    correctAnswer: [1, 4],
+    correctAnswer: [1, 4], // A, D
     type: "multiple",
     maxSelections: 2
   },
@@ -637,7 +637,7 @@ const sampleQuestions: Question[] = [
       "AWS Service Catalog",
       "AWS Partner Network (APN)"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - AWS Partner Network (APN)
     type: "single"
   },
   {
@@ -649,7 +649,7 @@ const sampleQuestions: Question[] = [
       "AWS Cost and Usage Report",
       "AWS Cost Anomaly Detection"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Cost and Usage Report
     type: "single"
   },
   {
@@ -661,7 +661,7 @@ const sampleQuestions: Question[] = [
       "AWS Backup",
       "Amazon Elastic File System (Amazon EFS)"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - AWS Storage Gateway
     type: "single"
   },
   {
@@ -673,7 +673,7 @@ const sampleQuestions: Question[] = [
       "Amazon Simple Queue Service (Amazon SQS)",
       "AWS Batch"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - AWS Batch
     type: "single"
   },
   {
@@ -686,7 +686,7 @@ const sampleQuestions: Question[] = [
       "AWS Global Accelerator",
       "Application Load Balancer"
     ],
-    correctAnswer: [1, 4],
+    correctAnswer: [1, 4], // A, D
     type: "multiple",
     maxSelections: 2
   },
@@ -699,7 +699,7 @@ const sampleQuestions: Question[] = [
       "Scale the size of EC2 instances up or down automatically, based on demand",
       "Transfer unused CPU resources between EC2 instances"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - Scale the number of EC2 instances in or out automatically, based on demand
     type: "single"
   },
   {
@@ -712,7 +712,7 @@ const sampleQuestions: Question[] = [
       "Take advantage of economies of scale",
       "Reduce dependencies on network connectivity"
     ],
-    correctAnswer: [2, 4],
+    correctAnswer: [2, 4], // B, D
     type: "multiple",
     maxSelections: 2
   },
@@ -725,7 +725,7 @@ const sampleQuestions: Question[] = [
       "Elastic Load Balancing (ELB)",
       "AWS Shield"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - AWS Shield
     type: "single"
   },
   {
@@ -737,7 +737,7 @@ const sampleQuestions: Question[] = [
       "Dedicated Hosts",
       "Spot Instances"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Spot Instances
     type: "single"
   },
   {
@@ -749,7 +749,7 @@ const sampleQuestions: Question[] = [
       "AWS Trusted Advisor",
       "Virtual private gateways"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Security groups
     type: "single"
   },
   {
@@ -761,7 +761,7 @@ const sampleQuestions: Question[] = [
       "IAM instance profiles",
       "IAM policies for individual users"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - IAM roles
     type: "single"
   },
   {
@@ -773,7 +773,7 @@ const sampleQuestions: Question[] = [
       "AWS Identity and Access Management (IAM)",
       "Amazon Cognito"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - AWS Secrets Manager
     type: "single"
   },
   {
@@ -785,7 +785,7 @@ const sampleQuestions: Question[] = [
       "AWS Artifact",
       "Amazon Inspector"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Artifact
     type: "single"
   },
   {
@@ -798,7 +798,7 @@ const sampleQuestions: Question[] = [
       "SSL",
       "Transparent Data Encryption (TDE)"
     ],
-    correctAnswer: [1, 2],
+    correctAnswer: [1, 2], // A, B
     type: "multiple",
     maxSelections: 2
   },
@@ -811,7 +811,7 @@ const sampleQuestions: Question[] = [
       "AWS IAM",
       "Amazon Inspector"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - AWS Config
     explanation: ["Helps with auditing and recording compliance of your AWS resources. Helps record configurations and changes over time"],
     type: "single"
   },
@@ -824,7 +824,7 @@ const sampleQuestions: Question[] = [
       "3 hours, 6 minutes",
       "4 hours"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - 3 hours, 5 minutes, and 6 seconds
     type: "single"
   },
   {
@@ -836,7 +836,7 @@ const sampleQuestions: Question[] = [
       "Elasticity",
       "Global reach"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Rightsizing
     type: "single"
   },
   {
@@ -848,7 +848,7 @@ const sampleQuestions: Question[] = [
       "AWS Key Management Service (AWS KMS)",
       "AWS Trusted Advisor"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - AWS customers
     type: "single"
   },
   {
@@ -860,7 +860,7 @@ const sampleQuestions: Question[] = [
       "AWS IAM Access Analyzer",
       "AWS Fargate"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS IAM Access Analyzer
     type: "single"
   },
   {
@@ -872,7 +872,7 @@ const sampleQuestions: Question[] = [
       "Business Support",
       "Enterprise Support"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Enterprise Support
     type: "single"
   },
   {
@@ -884,7 +884,7 @@ const sampleQuestions: Question[] = [
       "AWS Application Composer",
       "AWS App Runner"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Application Composer
     explanation: ["AWS Application Composer helps you visually compose and configure AWS services into serverless applications backed by infrastructure as code."],
     type: "single"
   },
@@ -897,7 +897,7 @@ const sampleQuestions: Question[] = [
       "AWS Management Console",
       "AWS Marketplace"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - AWS Marketplace
     type: "single"
   },
   {
@@ -909,7 +909,7 @@ const sampleQuestions: Question[] = [
       "Submit a request on AWS Marketplace to monitor the event",
       "Review the coverage reports in the AWS Cost Management console"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Use AWS Infrastructure Event Management (IEM) support
     type: "single"
   },
   {
@@ -921,7 +921,7 @@ const sampleQuestions: Question[] = [
       "Amazon Forecast",
       "Amazon DocumentDB (with MongoDB compatibility)"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Amazon Timestream
     explanation: ["Amazon Timestream is a fast, scalable, and serverless time-series database service that makes it easier to store and analyze trillions of events per day up to 1,000 times faster. Amazon Timestream automatically scales up or down to adjust capacity and performance, so that you don't have to manage the underlying infrastructure."],
     type: "single"
   },
@@ -934,7 +934,7 @@ const sampleQuestions: Question[] = [
       "Data integrity authentication",
       "Identity and access management"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - Configuration management
     type: "single"
   },
   {
@@ -946,7 +946,7 @@ const sampleQuestions: Question[] = [
       "AWS Managed Services (AMS)",
       "AWS Well-Architected Framework"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Managed Services (AMS)
     type: "single"
   },
   {
@@ -958,7 +958,7 @@ const sampleQuestions: Question[] = [
       "AWS Data Exchange",
       "AWS Database Migration Service (AWS DMS)"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - AWS Snowmobile
     type: "single"
   },
   {
@@ -970,7 +970,7 @@ const sampleQuestions: Question[] = [
       "Amazon Elastic Block Store (Amazon EBS)",
       "Amazon S3"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Amazon S3
     type: "single"
   },
   {
@@ -982,7 +982,7 @@ const sampleQuestions: Question[] = [
       "AWS WAF",
       "AWS Config"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - AWS CloudTrail
     type: "single"
   },
   {
@@ -994,7 +994,7 @@ const sampleQuestions: Question[] = [
       "AWS Snow Family",
       "Amazon EC2 Auto Scaling"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Amazon EC2 Auto Scaling
     type: "single"
   },
   {
@@ -1006,7 +1006,7 @@ const sampleQuestions: Question[] = [
       "Amazon Inspector",
       "AWS Shield"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Amazon Macie
     type: "single"
   },
   {
@@ -1018,7 +1018,7 @@ const sampleQuestions: Question[] = [
       "VPC endpoint services",
       "NAT gateway"
     ],
-    correctAnswer: 1,
+    correctAnswer: 1, // A - VPC Flow Logs
     type: "single"
   },
   {
@@ -1030,7 +1030,7 @@ const sampleQuestions: Question[] = [
       "AWS Trusted Advisor",
       "AWS WAF"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - Security groups
     type: "single"
   },
   {
@@ -1042,7 +1042,7 @@ const sampleQuestions: Question[] = [
       "Amazon Kinesis Data Streams",
       "Amazon Simple Queue Service (Amazon SQS)"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Amazon Simple Queue Service (Amazon SQS)
     explanation: ["Amazon SQS FIFO queues preserve the order in which messages are sent and received, and avoid that a message is processed more than once. This ensures that the messages are processed in first-in, first-out (FIFO) order."],
     type: "single"
   },
@@ -1055,7 +1055,7 @@ const sampleQuestions: Question[] = [
       "AWS Storage Gateway",
       "AWS Snowball Edge"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - AWS Snowball Edge
     explanation: ["AWS Snowball Edge is a type of Snowball device with on-board storage and compute power for select AWS capabilities"],
     type: "single"
   },
@@ -1068,7 +1068,7 @@ const sampleQuestions: Question[] = [
       "AWS Security Hub",
       "Amazon GuardDuty"
     ],
-    correctAnswer: 2,
+    correctAnswer: 2, // B - IAM roles
     type: "single"
   },
   {
@@ -1080,7 +1080,7 @@ const sampleQuestions: Question[] = [
       "AWS Cloud Development Kit (AWS CDK)",
       "AWS Systems Manager"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Cloud Development Kit (AWS CDK)
     explanation: ["The AWS Cloud Development Kit (AWS CDK) is a software development framework that allows users to define cloud infrastructure using familiar programming languages such as TypeScript, Python, Java, and C#. It enables you to model and provision AWS resources using code, making it easier to manage and automate your infrastructure."],
     type: "single"
   },
@@ -1093,7 +1093,7 @@ const sampleQuestions: Question[] = [
       "Amazon Cognito",
       "AWS IAM Identity Center (AWS Single Sign-On)"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - Amazon Cognito
     explanation: ["Cognito provides user authentication, authorization, and management for web and mobile applications. It includes features specifically designed for integrating social media logins (such as Facebook, Google, or Amazon) into applications, making it easier to manage user identities from various sources."],
     type: "single"
   },
@@ -1106,7 +1106,7 @@ const sampleQuestions: Question[] = [
       "AWS Database Migration Service (AWS DMS)",
       "AWS Application Migration Service"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - AWS Database Migration Service (AWS DMS)
     explanation: ["AWS Database Migration Service (AWS DMS) is a managed migration and replication service that helps you move your databases and analytics workloads to AWS quickly and securely."],
     type: "single"
   },
@@ -1119,7 +1119,7 @@ const sampleQuestions: Question[] = [
       "Configuration of infrastructure devices",
       "Configuration of security groups on each instance"
     ],
-    correctAnswer: 3,
+    correctAnswer: 3, // C - Configuration of infrastructure devices
     type: "single"
   },
   {
@@ -1131,7 +1131,7 @@ const sampleQuestions: Question[] = [
       "Amazon Aurora PostgreSQL-Compatible Edition",
       "Amazon Aurora Serverless"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - Amazon Aurora Serverless
     type: "single"
   },
   {
@@ -1143,7 +1143,7 @@ const sampleQuestions: Question[] = [
       "S3 Standard-Infrequent Access (S3 Standard-IA)",
       "S3 One Zone-Infrequent Access (S3 One Zone-IA)"
     ],
-    correctAnswer: 4,
+    correctAnswer: 4, // D - S3 One Zone-Infrequent Access (S3 One Zone-IA)
     type: "single"
   }
 ];
