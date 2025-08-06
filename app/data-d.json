@@ -1,15 +1,4 @@
-interface Question {
-  id: number
-  question: string
-  options: string[]
-  correctAnswer: number | number[]
-  explanation?: string[]
-  wrongexplanation?: string[]
-  type: "single" | "multiple"
-  maxSelections?: number
-}
-
-const sampleQuestions: Question[] = [
+[
   {
     "id": 51,
     "question": "A company wants to automatically set up and govern a multi-account AWS environment. Which AWS service provides this functionality?",
@@ -684,7 +673,4 @@ const sampleQuestions: Question[] = [
     ],
     "type": "single"
   }
-];
-
-export { sampleQuestions };
-export type { Question };
+]
